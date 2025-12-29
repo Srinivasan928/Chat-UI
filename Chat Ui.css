@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phone */
+.phone {
+    width: 375px;
+    height: 760px;
+    background: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+}
+
+/* Header */
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header-info span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Chat */
+.chat {
+    flex: 1;
+    background: #fafafa;
+    padding: 14px;
+    overflow-y: auto;
+}
+
+.day {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: flex-end;
+}
+
+.row.left {
+    justify-content: flex-start;
+}
+
+.row.right {
+    justify-content: flex-end;
+}
+
+/* Avatars */
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Bubbles */
+.bubble {
+    max-width: 72%;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* Received */
+.received {
+    background: #e4e6eb;
+    color: #000;
+}
+
+/* Sent */
+.sent {
+    background: #3797f0;
+    color: #ffffff;
+}
+
+/* Image bubble */
+.image {
+    padding: 4px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+}
+
+/* Seen */
+.seen {
+    text-align: right;
+    font-size: 11px;
+    color: #999;
+    margin: 6px 4px 0 0;
+}
+
+/* Input */
+.input {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-top: 1px solid #e5e5e5;
+    gap: 10px;
+}
+
+.input input {
+    flex: 1;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 0 14px;
+    outline: none;
+}
+
+.input button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #3797f0;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
