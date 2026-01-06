@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+
+<div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+
+  
+  <div class="flex items-center gap-4 px-5 py-4 border-b">
+    <img src="https://i.pravatar.cc/100?img=12" class="w-10 h-10 rounded-full" alt="profile">
+    <div>
+      <h2 class="font-semibold">Prakash</h2>
+      <p class="text-xs text-green-500">Online</p>
+    </div>
+  </div>
+
+ 
+  <div class="px-4 py-6 space-y-4 h-[420px] overflow-y-auto bg-slate-50">
+
+
+    <div class="flex items-start gap-3">
+      <img src="https://i.pravatar.cc/100?img=12" class="w-8 h-8 rounded-full">
+      <div class="bg-white rounded-2xl rounded-tl-none px-4 py-2 shadow text-sm max-w-xs">
+        Hey! Did you finish the design update?
+      </div>
+    </div>
+
+ 
+    <div class="flex justify-end">
+      <div class="bg-indigo-600 text-white rounded-2xl rounded-tr-none px-4 py-2 text-sm max-w-xs">
+        Almost done 🙂 I’ll share it in a few minutes.
+      </div>
+    </div>
+
+    
+    <div class="flex items-start gap-3">
+      <img src="https://i.pravatar.cc/100?img=12" class="w-8 h-8 rounded-full">
+      <div class="bg-white rounded-2xl rounded-tl-none px-4 py-2 shadow text-sm max-w-xs">
+        Perfect! Take your time 👍
+      </div>
+    </div>
+
+    
+    <div class="flex justify-end">
+      <div class="bg-indigo-600 text-white rounded-2xl rounded-tr-none px-4 py-2 text-sm max-w-xs">
+        Thanks! I really like how this one turned out.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t px-4 py-3 flex items-center gap-3">
+    <input 
+      type="text" 
+      placeholder="Type a message…" 
+      class="flex-1 px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+    >
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700">
+      Send
+    </button>
+  </div>
+
+</div>
+
+</body>
+</html>
